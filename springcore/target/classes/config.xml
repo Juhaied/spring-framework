@@ -12,17 +12,14 @@
 	<!-- This is our beans -->
 	<bean class="com.springcore.Student" name="student1">
 
-		<property name="studentID">
-			<value>1</value>
-		</property>
+		<property name="studentID" value ="1"/>
+		
 
-		<property name="studentName">
-			<value>Juhaied Hossen</value>
-		</property>
+		<property name="studentName" value="Juhaied Hossen"/>
+		
 
-		<property name="studentAddress">
-			<value>CTG</value>
-		</property>
+		<property name="studentAddress" value="Chittagong"/>
+			
 	</bean>
 </beans>
  
