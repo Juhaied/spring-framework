@@ -13,12 +13,12 @@ public class TestCollection {
 
 		ApplicationContext context = new ClassPathXmlApplicationContext("com/springcore/colletions/collections.xml");
 		//Class   obj    typecast  context         (bean name)
-		Employees emp1 =(Employees)context.getBean("e1");
+		Employees emp =(Employees)context.getBean("e1");
 	
-		pw.println(emp1.getName());
-		pw.println(emp1.getPhones());
-		pw.println(emp1.getAddress());
-		pw.println(emp1.getCourses());
+		pw.println(emp.getName());
+		pw.println(emp.getPhones());
+		pw.println(emp.getAddress());
+		pw.println(emp.getCourses());
 
 		pw.close();
 	}

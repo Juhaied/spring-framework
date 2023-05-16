@@ -10,8 +10,7 @@ public class Employees {
 	private Set<String> address;
 	private Map<String,String> courses;
 	public String getName() {
-		return name;
-	}
+		return name;}
 	public void setName(String name) {
 		this.name = name;
 	}
