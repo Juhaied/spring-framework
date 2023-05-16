@@ -11,7 +11,7 @@
 
 	<bean class="com.springcore.constructor_injection.Certificate"
 		name="certificate">
-		<constructor-arg value="Bsc In Computer Sceince" />
+		<constructor-arg value="Bsc In Computer Science and Enginerring" />
 	</bean>
 
 	<bean class="com.springcore.constructor_injection.Person"
