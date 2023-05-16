@@ -19,7 +19,7 @@ public class Burger {
 
 	@Override
 	public String toString() {
-		return "Burger [price=" + price + "]";
+		return "Burger [price=" + price + "]\n";
 	}
 	
 	public void init() {
