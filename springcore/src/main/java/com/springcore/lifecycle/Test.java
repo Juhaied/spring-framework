@@ -10,8 +10,8 @@ public class Test {
 		PrintWriter pw = new PrintWriter(System.out);
 
 		AbstractApplicationContext context = new ClassPathXmlApplicationContext("com/springcore/lifecycle/config.xml");
-		context.registerShutdownHook();
-		Burger br =(Burger) context.getBean("burger");
+		//context.registerShutdownHook();
+	/*	Burger br =(Burger) context.getBean("burger");
 		
 		System.out.print(br);
 		
@@ -19,6 +19,10 @@ public class Test {
 		
 		Pepsi pep = (Pepsi)context.getBean("pepsi");
 		pw.println(pep);
+		*/
+		
+		annotations an = (annotations) context.getBean("anno");
+		pw.println(an);
 		pw.close();
 
 	}
