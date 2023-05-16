@@ -14,12 +14,11 @@ public class Burger {
 
 	public Burger() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	@Override
 	public String toString() {
-		return "Burger [price=" + price + "]\n";
+		return "Burger [price=" + price + "]";
 	}
 	
 	public void init() {
