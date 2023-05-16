@@ -9,26 +9,35 @@
  	http://www.springframework.org/schema/context
  	http://www.springframework.org/schema/context/spring-context.xsd">
 
-	<bean class="com.springcore.constructor_injection.Person" name="per">
+	<bean class="com.springcore.constructor_injection.Certificate"
+		name="certificate">
+		<constructor-arg value="Bsc In Computer Sceince" />
+	</bean>
+
+	<bean class="com.springcore.constructor_injection.Person"
+		name="per">
 		<constructor-arg value="Juhaied" />
-		<constructor-arg value="9" type ="int"/>
+		<constructor-arg value="9" />
+		<constructor-arg ref="certificate" />
+
+		<constructor-arg>
+			<list>
+				<value>Cse115</value>
+				<value>CSE215</value>
+			</list>
+		</constructor-arg>
 	</bean>
-	
-	<bean class="com.springcore.constructor_injection.Person" name="person_salary">
+
+	<bean class="com.springcore.constructor_injection.Person"
+		name="person_salary">
 		<constructor-arg value="Juhaied" />
-		<constructor-arg value="90000" type ="double"/>
+		<constructor-arg value="90000" type="double" />
 	</bean>
-	
-	<!-- 
-	if we have several constructor in a class we can calk them by define type
-	
-	<bean class="com.springcore.constructor_injection.Person" name="person">
-		<constructor-arg value="Juhaied"/>
-		<constructor-arg value="9"/ type="int">
-	</bean>
-	
-	so this will initiate the constructor which 2nd parameter is type int
-	
-	 -->
+
+	<!-- if we have several constructor in a class we can calk them by define 
+		type <bean class="com.springcore.constructor_injection.Person" name="person"> 
+		<constructor-arg value="Juhaied"/> <constructor-arg value="9"/ type="int"> 
+		</bean> so this will initiate the constructor which 2nd parameter is type 
+		int -->
 </beans>
  

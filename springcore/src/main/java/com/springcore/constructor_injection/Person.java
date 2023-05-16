@@ -1,12 +1,18 @@
 package com.springcore.constructor_injection;
 
+import java.util.ArrayList;
+
 public class Person {
 	private String name;
 	private int personId;
 	private double salary;
-	public Person(String name,int personId) {
+	private ArrayList<String> courses;
+	private Certificate certi;
+	public Person(String name,int personId,Certificate certi,ArrayList<String> courses) {
 		this.name = name;
 		this.personId = personId;
+		this.certi = certi;
+		this.courses = courses;
 	}
 	
 	public Person(String name,double salary) {
@@ -17,7 +23,7 @@ public class Person {
 
 	@Override
 	public String toString() {
-		return "Name : "+this.name+" ,ID: "+this.personId;
+		return "Name : "+this.name+" ,ID: "+this.personId+" Courses = [ "+this.courses+" ]" +"Degree in "+this.certi.getName();
 	}
 	
 	public String wholeCons() {
