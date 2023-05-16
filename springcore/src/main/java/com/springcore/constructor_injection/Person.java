@@ -23,7 +23,7 @@ public class Person {
 
 	@Override
 	public String toString() {
-		return "Name : "+this.name+" ,ID: "+this.personId+" Courses = [ "+this.courses+" ]" +"Degree in "+this.certi.getName();
+		return "Name : "+this.name+" ,ID: "+this.personId+" Courses =  "+this.courses+" " +"Degree in "+this.certi.getName();
 	}
 	
 	public String wholeCons() {

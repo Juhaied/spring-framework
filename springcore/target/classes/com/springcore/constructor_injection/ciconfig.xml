@@ -22,8 +22,8 @@
 
 		<constructor-arg>
 			<list>
-				<value>Cse115</value>
-				<value>CSE215</value>
+			<value>Cse115</value>
+			<value>CSE225</value>
 			</list>
 		</constructor-arg>
 	</bean>
