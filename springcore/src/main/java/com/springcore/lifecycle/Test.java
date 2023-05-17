@@ -12,7 +12,7 @@ public class Test {
 		AbstractApplicationContext context = new ClassPathXmlApplicationContext("com/springcore/lifecycle/config.xml");
 		context.registerShutdownHook();
 		Burger br =(Burger) context.getBean("burger");
-		
+		 
 		System.out.print(br);
 		
 
